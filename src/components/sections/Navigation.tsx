@@ -20,10 +20,10 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img 
-              src="/src/assets/logo-branco.png" 
-              alt="Clipador Logo" 
-              className="w-12 h-12 object-contain"
+            <img
+              src="/src/assets/logo-branco.png"
+              alt="Clipador Logo"
+              className="w-[120px] h-[60px] object-contain border-none"
             />
           </div>
 
@@ -42,7 +42,10 @@ const Navigation = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center">
-            <Button variant="default" onClick={() => window.open('https://t.me/ClipadorBot', '_blank')}>
+            <Button
+              variant="default"
+              onClick={() => window.open("https://t.me/ClipadorBot", "_blank")}
+            >
               Começar no Telegram
             </Button>
           </div>
@@ -75,7 +78,13 @@ const Navigation = () => {
                 </a>
               ))}
               <div className="pt-4">
-                <Button variant="default" className="w-full" onClick={() => window.open('https://t.me/ClipadorBot', '_blank')}>
+                <Button
+                  variant="default"
+                  className="w-full"
+                  onClick={() =>
+                    window.open("https://t.me/ClipadorBot", "_blank")
+                  }
+                >
                   Começar no Telegram
                 </Button>
               </div>
