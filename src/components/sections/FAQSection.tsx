@@ -10,43 +10,54 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "Como funciona o monitoramento automático?",
-      answer: "Nossa IA monitora seus streamers favoritos continuamente através de múltiplos modos: detecção de picos de audiência, análise de chat em tempo real, reconhecimento de momentos engraçados/épicos e monitoramento de reações. Você pode configurar a sensibilidade e tipos de conteúdo que deseja receber através do bot."
+      answer:
+        "Nossa IA monitora seus streamers favoritos continuamente através de múltiplos modos: detecção de picos de audiência, análise de chat em tempo real, reconhecimento de momentos engraçados/épicos e monitoramento de reações. Você pode configurar a sensibilidade e tipos de conteúdo que deseja receber através do bot.",
     },
     {
       question: "Quantos streamers posso monitorar?",
-      answer: "Depende do seu plano: Mensal Solo (1 streamer), Mensal Plus (até 3 streamers), Anual Pro (5 streamers). Cada plano permite monitoramento completo dos streamers selecionados."
+      answer:
+        "Depende do seu plano: Mensal Solo (1 streamer), Mensal Plus (até 3 streamers), Anual Pro (5 streamers). Cada plano permite monitoramento completo dos streamers selecionados.",
     },
     {
       question: "Como funciona a troca de streamers?",
-      answer: "A troca de streamers é feita durante a renovação do seu plano, independentemente de qual plano você tenha. Você pode gerenciar sua lista de streamers através do bot no Telegram."
+      answer:
+        "A troca de streamers é feita durante a renovação do seu plano, independentemente de qual plano você tenha. Você pode gerenciar sua lista de streamers através do bot no Telegram.",
     },
     {
       question: "Os clipes são gerados automaticamente?",
-      answer: "Atualmente nossa IA identifica e marca os melhores momentos para você. A geração automática de clipes editados será uma atualização futura que estamos desenvolvendo. Por enquanto, você recebe os timestamps dos momentos mais virais."
+      answer:
+        "Atualmente nossa IA identifica e marca os melhores momentos para você. A geração automática de clipes editados será uma atualização futura que estamos desenvolvendo. Por enquanto, você recebe os timestamps dos momentos mais virais.",
     },
     {
       question: "Posso usar os clipes comercialmente?",
-      answer: "Os clipes são extraídos de conteúdo público das lives. Recomendamos sempre verificar as políticas de cada streamer e plataforma onde você pretende publicar."
+      answer:
+        "Os clipes são extraídos de conteúdo público das lives. Recomendamos sempre verificar as políticas de cada streamer e plataforma onde você pretende publicar.",
     },
     {
       question: "Como recebo os clipes?",
-      answer: "Todos os alertas e informações são enviados diretamente para o seu Telegram através do nosso bot. Você receberá uma notificação assim que um novo momento viral for detectado, junto com o timestamp e contexto."
+      answer:
+        "Todos os alertas e informações são enviados diretamente para o seu Telegram através do nosso bot. Você receberá uma notificação assim que um novo momento viral for detectado, junto com o timestamp e contexto.",
     },
     {
       question: "Qual o formato dos alertas?",
-      answer: "Você recebe notificações no Telegram com: timestamp exato do momento, contexto do que aconteceu, link direto para a live, e screenshot do momento para visualização rápida."
+      answer:
+        "Você recebe notificações no Telegram com: timestamp exato do momento, contexto do que aconteceu, link direto para a live, e screenshot do momento para visualização rápida.",
     },
     {
       question: "Posso cancelar a qualquer momento?",
-      answer: "Sim, você pode cancelar seu plano a qualquer momento através do nosso bot no Telegram. Não há fidelidade, oferecemos reembolso em até 7 dias úteis, e você tem 3 dias de teste gratuito para experimentar o serviço."
-    }
+      answer:
+        "Sim, você pode cancelar seu plano a qualquer momento através do nosso bot no Telegram. Não há fidelidade, oferecemos reembolso em até 7 dias úteis, e você tem 3 dias de teste gratuito para experimentar o serviço.",
+    },
   ];
 
   return (
     <section className="py-20 bg-card/20 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-primary/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div
+          className="absolute top-1/3 right-1/4 w-80 h-80 bg-primary/15 rounded-full blur-3xl animate-pulse"
+          style={{ animationDelay: "2s" }}
+        ></div>
         <div className="absolute bottom-1/3 left-1/4 w-60 h-60 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
       </div>
 
@@ -56,21 +67,25 @@ const FAQSection = () => {
             <HelpCircle className="w-4 h-4 text-primary" />
             Perguntas Frequentes
           </div>
-          
+
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
             Dúvidas Frequentes
           </h2>
-          
+
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Tire suas principais dúvidas sobre o Clipador e como ele pode revolucionar sua criação de conteúdo
+            Tire suas principais dúvidas sobre o Clipador e como ele pode
+            revolucionar sua criação de conteúdo
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
+        <div
+          className="max-w-4xl mx-auto animate-fade-in"
+          style={{ animationDelay: "0.2s" }}
+        >
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem 
-                key={index} 
+              <AccordionItem
+                key={index}
                 value={`item-${index}`}
                 className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg px-6 hover:border-primary/30 transition-colors duration-300"
               >
@@ -86,12 +101,17 @@ const FAQSection = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-16 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+        <div
+          className="text-center mt-16 animate-fade-in"
+          style={{ animationDelay: "0.4s" }}
+        >
           <p className="text-muted-foreground mb-4">
             Ainda tem dúvidas? Fale conosco diretamente!
           </p>
-          <div className="inline-flex items-center gap-2 text-primary font-semibold cursor-pointer hover:underline"
-               onClick={() => window.open('https://t.me/ClipadorBot', '_blank')}>
+          <div
+            className="inline-flex items-center gap-2 text-primary font-semibold cursor-pointer hover:underline"
+            onClick={() => window.open("https://t.me/ClipadorBot", "_blank")}
+          >
             <HelpCircle className="w-4 h-4" />
             Conversar no Telegram
           </div>
